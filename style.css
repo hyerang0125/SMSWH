@@ -1,3 +1,7 @@
+body{
+    position: relative;
+}
+
 img{
     width: 300px;
     height: 300px;
@@ -14,12 +18,13 @@ img{
 
 .mainTitle{
     margin-top: 85px;
-    margin: 0 auto;
+    margin-left: 75px;
     font-size: 35px;
 }
 
 .startImg{
     margin-top: 35px;
+    margin-left: 100px;
 }
 
 .startBtn{
