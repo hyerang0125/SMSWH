@@ -1,0 +1,26 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+.wrap{
+    width: 500px;
+    height: 720px;
+    margin: 0 auto;
+}
+
+.mainTitle{
+    font-size: 35px;
+}
+
+.startBtn{
+    top: 701px;
+    left: 793px;
+    width: 335px;
+    height: 100px;
+    font-size: 30px;
+    background: #63A4FF 0% 0% no-repeat padding-box;
+    border: 3px solid #004BA0;
+    border-radius: 37px;
+    opacity: 1;
+}
