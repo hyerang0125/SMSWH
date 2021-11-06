@@ -1,5 +1,6 @@
 body{
     position: relative;
+    margin: 0px;
 }
 
 img{
@@ -8,27 +9,34 @@ img{
 }
 
 .wrap{
-    width: 500px;
-    height: 720px;  
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 50%;
+    transform: translate(100%);
+    width: 500px;
+    height: 710px;  
 }
 
 .mainTitle{
-    margin-top: 85px;
+    margin-top: 80px;
     margin-left: 75px;
+    width: 350px;
+    height: 47px;
     font-size: 35px;
 }
 
 .startImg{
     margin-top: 35px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 .startBtn{
-    margin-top: 55px;
+    width: 335px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 83px;
+    margin-right: 83px;
     font-size: 30px;
     color:#FFFFFF;
     background: #63A4FF 0% 0% no-repeat padding-box;
