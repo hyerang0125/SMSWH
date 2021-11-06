@@ -1,6 +1,8 @@
-body{
-    position: relative;
-    margin: 0px;
+body, html{
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
 }
 
 img{
@@ -9,10 +11,6 @@ img{
 }
 
 .wrap{
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(100%);
     width: 500px;
     height: 710px;  
 }
