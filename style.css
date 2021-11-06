@@ -5,8 +5,11 @@ img{
 
 .wrap{
     width: 500px;
-    height: 720px;
-    margin: 0 auto;
+    height: 720px;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .mainTitle{
@@ -14,8 +17,8 @@ img{
     left: 0px;
     width: 1920px;
     height: 1080px;
-
-    font-size: 35;
+    margin: 0 auto;
+    font-size: 35px;
 }
 
 .startImg{
@@ -25,6 +28,7 @@ img{
 .startBtn{
     margin-top: 55px;
     font-size: 30px;
+    color:#FFFFFF;
     background: #63A4FF 0% 0% no-repeat padding-box;
     border: 3px solid #004BA0;
     border-radius: 37px;
