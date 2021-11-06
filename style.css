@@ -13,10 +13,7 @@ img{
 }
 
 .mainTitle{
-    top: 0px;
-    left: 0px;
-    width: 1920px;
-    height: 1080px;
+    margin-top: 85px;
     margin: 0 auto;
     font-size: 35px;
 }
