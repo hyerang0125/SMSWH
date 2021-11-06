@@ -10,13 +10,13 @@ img{
 }
 
 .wrap{
-    width: 500px;
+    width: 450px;
     height: 710px;  
 }
 
 .mainTitle{
     margin-top: 80px;
-    margin-left: 75px;
+    margin-left: 50px;
     width: 350px;
     height: 47px;
     font-size: 35px;
@@ -24,16 +24,16 @@ img{
 
 .startImg{
     margin-top: 35px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 .startBtn{
     width: 335px;
     height: 100px;
     margin-top: 50px;
-    margin-left: 83px;
-    margin-right: 83px;
+    margin-left: 58px;
+    margin-right: 58px;
     font-size: 30px;
     color:#FFFFFF;
     background: #63A4FF 0% 0% no-repeat padding-box;
