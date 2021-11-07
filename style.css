@@ -1,0 +1,45 @@
+body, html{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.wrap{
+    width: 400px;
+    height: 710px;  
+}
+
+.mainTitle{
+    margin-top: 60px;
+    margin-left: 25px;
+    width: 350px;
+    height: 47px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.startImg{
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.startBtn{
+    width: 335px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 33px;
+    margin-right: 33px;
+    font-size: 30px;
+    color:#FFFFFF;
+    background: #63A4FF 0% 0% no-repeat padding-box;
+    border: 3px solid #004BA0;
+    border-radius: 37px;
+    opacity: 1;
+}
