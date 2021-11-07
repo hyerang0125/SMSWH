@@ -9,8 +9,8 @@ function randomItem() {
             visited[temp] = true;
             return temp;
        }
-        return result();
     }
+    return result();
 }
 
 let IE = [0, 0];
