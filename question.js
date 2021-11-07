@@ -18,7 +18,7 @@ arr[9][3] = "";
 
 var visited = new Array(10);
 for (var i = 0; i < 10; i++)
-    visited = false;
+    visited[i] = false;
 
 function randomItem() {
     while (1) {
@@ -26,7 +26,7 @@ function randomItem() {
         console.log(temp);
         if (!visited[temp]) {
             visited[temp] = true;
-            return temp;
+            return `question${temp}.html`;
         }
     }
 }
@@ -39,4 +39,9 @@ function getImage(temp) {
     img += imgURL[temp];
     img += '\" class=\"startImg\"/>';
     return img;
+}
+
+function score(e) {
+    let total = 0;
+    
 }
