@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 400px;
+  height: 710px;
+}
+
+/* character */
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.character p {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.character p span {
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.character img {
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  margin-bottom: 150px;
+  padding-left: 13px;
+}
+
+.text li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  position: absolute;
+  left: -20px;
+  top: 6px;
+}
+
+.destiny {
+  display: flex;
+  padding-left: 0;
+}
+
+/* .destiny li {
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+} */
+
+.destiny li:nth-child(1) {
+  border-right: 1px solid #dbdbdb;
+}
+
+.destiny li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.destiny li a .fate {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.destiny li a img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.destiny li a p {
+  font-size: 18px;
+}
+
+.destiny li a p span {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+}
