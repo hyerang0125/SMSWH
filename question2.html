@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="question.js"></script>
 <html>
     <head>
         <title>내가 만약 지박령이라면?</title>
@@ -13,8 +14,8 @@
             <p class="questionText">Q2. 성적이 짜기로 유명한 수업에서 좋은 성적을 받았다. 이때 나는</p>
             <img src="static/2.png" class="startImg">
             <div class=selectBtn>
-                <button type="button" onclick="document.location.href='question3.html'">혼자 맛있는 걸 먹으러 간다.</button>
-                <button type="button" onclick="document.location.href='question3.html'">맛집으로 친구들을 불러 모은다. 오늘은 내가 쏜다~!</button>    
+                <button type="button" value="0" onclick="document.location.href='question3.html'; score(event)">혼자 맛있는 걸 먹으러 간다.</button>
+                <button type="button" value="1" onclick="document.location.href='question3.html'; score(event)">맛집으로 친구들을 불러 모은다. 오늘은 내가 쏜다~!</button>    
             </div>
         </div>
     </body>

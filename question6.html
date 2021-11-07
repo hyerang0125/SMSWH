@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="question.js"></script>
 <html>
     <head>
         <title>내가 만약 지박령이라면?</title>
@@ -13,8 +14,8 @@
             <p class="questionText">Q6. 자살의 반대말은</p>
             <img src="static/6.png" class="startImg">
             <div class=selectBtn>
-                <button type="button" onclick="document.location.href='question7.html'">살자.</button>
-                <button type="button" onclick="document.location.href='question7.html'">타살.</button>    
+                <button type="button" value="4" onclick="document.location.href='question7.html'; score(event)">살자.</button>
+                <button type="button" value="5" onclick="document.location.href='question7.html'; score(event)">타살.</button>    
             </div>
         </div>
     </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="question.js"></script>
 <html>
     <head>
         <title>내가 만약 지박령이라면?</title>
@@ -13,8 +14,8 @@
             <p class="questionText">Q5. 전방 5m앞 카톡으로만 대화해본 동기가 있다.</p>
             <img src="static/5.png" class="startImg">
             <div class=selectBtn>
-                <button type="button" onclick="document.location.href='question6.html'">다른 방향으로 돌아간다. 으음,,, 인사하기 애매한 거리야,,,</button>
-                <button type="button" onclick="document.location.href='question6.html'">보자마자 달려가서 아는척 한다. 안녕!!</button>    
+                <button type="button" value="0" onclick="document.location.href='question6.html'; score(event)">다른 방향으로 돌아간다. 으음,,, 인사하기 애매한 거리야,,,</button>
+                <button type="button" value="1" onclick="document.location.href='question6.html'; score(event)">보자마자 달려가서 아는척 한다. 안녕!!</button>    
             </div>
         </div>
     </body>

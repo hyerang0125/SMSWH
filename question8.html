@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="question.js"></script>
 <html>
     <head>
         <title>내가 만약 지박령이라면?</title>
@@ -13,8 +14,8 @@
             <p class="questionText">Q8. 오징어 게임에 초대되었다. 이때 나는</p>
             <img src="static/8.png" class="startImg">
             <div class=selectBtn>
-                <button type="button" onclick="document.location.href='question9.html'">이거 구라 아니야? 신종 사기인가,,라며 혼자 깊게 생각한다.</button>
-                <button type="button" onclick="document.location.href='question9.html'">뭐? 당장가!! 우리 모두 화이팅~</button>    
+                <button type="button" value="0 3" onclick="document.location.href='question9.html'; score(event)">이거 구라 아니야? 신종 사기인가,,라며 혼자 깊게 생각한다.</button>
+                <button type="button" value="1 6" onclick="document.location.href='question9.html'; score(event)">뭐? 당장가!! 우리 모두 화이팅~</button>    
             </div>
         </div>
     </body>
