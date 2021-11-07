@@ -1,6 +1,7 @@
 let visited = new Array(10);
 for (let i = 0; i < 10; i++)
-    visited[i] = false;
+   visited[i] = false;
+    console.log(cnt);
 
 function randomItem() {
     while (cnt < 10) {
@@ -8,7 +9,8 @@ function randomItem() {
         if (!visited[temp]) {
             visited[temp] = true;
             return temp;
-        }
+       }
+        return result();
     }
 }
 
@@ -53,17 +55,17 @@ function result () {
     arr[2] = FT[0] > FT[1] ? 0 : 1;
     arr[3] = PJ[0] > PJ[1] ? 0 : 1;
 
-    for(let i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) {
-            if (i == 3) return;
-            res = res << 1;
-        }
-        else {
-            res+1;
-            if (i == 3) return;   
-            res = res << 1;
-        }
+    let num = 0;
+    let temp = 1;
+
+    for(let i = 3; i >=0; i--) {
+        num += arr[i] * temp;
+        temp *= 2;
     }
+
+    console.log('num : ' + num);
+
+    document.location.href='result'+num+'.html';
 }
 // console.log(res);
 // 0 1 2 3 4 5 6 7
