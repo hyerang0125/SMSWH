@@ -3,7 +3,7 @@ for (let i = 0; i < 10; i++)
    visited[i] = false;
 
 function randomItem() {
-    while (cnt < 10) {
+    while (cnt <= 10) {
         var temp = Math.floor(Math.random() * 10);
         if (!visited[temp]) {
             visited[temp] = true;
