@@ -1,20 +1,3 @@
-arr[6][0] = "";
-arr[6][1] = "";
-
-
-arr[7][0] = "";
-arr[7][1] = "";
-
-
-arr[8][0] = "";
-arr[8][1] = "";
-
-
-arr[9][0] = "";
-arr[9][1] = "";
-arr[9][2] = "";
-arr[9][3] = "";
-
 
 var visited = new Array(10);
 for (var i = 0; i < 10; i++)
@@ -26,7 +9,7 @@ function randomItem() {
         console.log(temp);
         if (!visited[temp]) {
             visited[temp] = true;
-            return `question${temp}.html`;
+            return temp;
         }
     }
 }
@@ -40,3 +23,4 @@ function getImage(temp) {
     img += '\" class=\"startImg\"/>';
     return img;
 }
+document.getElementById('imgId').innerHTML = getImage(randomItem());

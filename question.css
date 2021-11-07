@@ -1,0 +1,28 @@
+.questionText{
+    margin-top: 60px;
+    margin-left: 25px;
+    width: 350px;
+    height: 47px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.selectBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  height: 140px;
+}
+
+.selectBtn button {
+  width: 335px;
+  padding: 5px 0;
+  font-size: 18px;
+  color: #ffffff;
+  background: #63a4ff;
+  border: 3px solid #004ba0;
+  border-radius: 20px;
+  opacity: 1;
+}

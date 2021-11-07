@@ -6,12 +6,46 @@
         <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="question.css">
-        <script type="text/javascript" href="qeustion.js"> </script>
+        <script type="text/javascript" src="js/question.js">   
+            var visited = new Array(10);
+            for (var i = 0; i < 10; i++)
+                visited[i] = false;
+
+            function randomItem() {
+                while (1) {
+                    var temp = Math.floor(Math.random() * 10);
+                    console.log(temp);
+                    if (!visited[temp]) {
+                        visited[temp] = true;
+                        return temp;
+                    }
+                }
+            }
+
+            for(var i=0; i<10; i++){
+                console.log(randomItem());
+            }
+
+            var imgURL = ['static/1.png', 'static/2.png', 'static/3.png', 'static/4.png', 'static/5.png',
+                'static/6.png', 'static/7.png', 'static/8.png', 'static/9.png', 'static/10.png'];
+
+            function getImage(temp) {
+                var img = '<img src=\"';
+                img += imgURL[temp];
+                img += '\" class=\"startImg\"/>';
+                return img;
+            }
+        </script>
     </head>
     <body>
         <div class="wrap">
             <p class="questionText">Q1. 예정되어 있던 실시간 강의가 취소되었다. 이때 나는</p>
-            <img src="static/1.png" class="startImg">
+            <!--<img src="static/1.png" class="startImg">-->
+            <p id="imgId"></p>
+            <script>
+                    document.getElementById('imgId').innerHTML = getImage(randomItem());
+                
+            </script>
             <div class=selectBtn>
                 <button type="button" onclick="document.location.href='question2.html'">뭐? 강의 취소? 친구들에게 연락한다.</button>
                 <button type="button" onclick="document.location.href='question2.html'">오늘 올라온 다른 강의를 듣는다.</button>    
