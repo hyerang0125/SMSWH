@@ -1,22 +1,15 @@
-var visited = new Array(10);
-for (var i = 0; i < 10; i++)
+let visited = new Array(10);
+for (let i = 0; i < 10; i++)
     visited[i] = false;
 
 function randomItem() {
-    while (1) {
+    while (cnt < 10) {
         var temp = Math.floor(Math.random() * 10);
         if (!visited[temp]) {
             visited[temp] = true;
             return temp;
         }
     }
-}
-
-function getImage(temp) {
-    var img = '<img src=\"';
-    img += imgURL[temp];
-    img += '\" class=\"startImg\"/>';
-    return img;
 }
 
 let IE = [0, 0];
@@ -42,15 +35,16 @@ function score(e) {
             case 7: PJ[1]++;
         }    
     }
-    console.log(IE[0]);
-    console.log(IE[1]);
-    console.log(NS[0]);
-    console.log(NS[1]);    
-    console.log(FT[1]);
-    console.log(FT[1]);
-    console.log(PJ[0]);
-    console.log(PJ[1]);
+    // console.log(IE[0]);
+    // console.log(IE[1]);
+    // console.log(NS[0]);
+    // console.log(NS[1]);    
+    // console.log(FT[1]);
+    // console.log(FT[1]);
+    // console.log(PJ[0]);
+    // console.log(PJ[1]);
 }
+
 let res = 0;
 function result () {
     let arr = new Array(4);
@@ -101,14 +95,19 @@ let select = [['오늘 올라온 다른 강의를 듣는다.', '뭐? 강의 취�
 let value = [['7', '6'], ['0', '1'], ['7', '6'], ['2', '3'], ['0', '1'], ['4', '5'],
 ['3', '2'], ['0 3', '1 6'], ['4', '5'], ['0 3', '0 2', '1 3', '1 2']];
 
+let cnt = 0;
+
 function loadQuestion() {
+    if(cnt == 10) return result();   
     let num = randomItem();
+    cnt++;
+    console.log(cnt);
     document.getElementsByClassName('questionText')[0].innerHTML = question[num];
     document.getElementsByClassName('startImg')[0].src = imgURL[num];
     
     let msg = "";
     for (let i = 0; i < select[num].length; i++) { 
-        msg += `<button type='button' value='${value[num][i]}' onclick='score(event); loadQuestion()'>${select[num][i]}</button>`;
+        msg += `<button type='button' value='${value[num][i]}' onclick='score(event); loadQuestion(); (cnt==10)?result():""'>${select[num][i]}</button>`;
     }
     document.getElementsByClassName('selectBtn')[0].innerHTML = msg;
 }
