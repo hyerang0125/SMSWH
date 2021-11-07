@@ -1,7 +1,6 @@
 let visited = new Array(10);
 for (let i = 0; i < 10; i++)
    visited[i] = false;
-    console.log(cnt);
 
 function randomItem() {
     while (cnt < 10) {
